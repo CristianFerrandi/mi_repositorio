@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!--bootstrap-->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<!--custom styles-->
+<link rel="stylesheet" href="../css/style.css">
+
+
+ <!--slyder-->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+	<div class="carousel-indicators">
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img src="../assets/Logo Breaking bad.webp" class="d-block w-100 custom" alt="...">
+	  </div>
+	  <div class="carousel-item">
+		<img src="../assets/galeria 1.jpg" class="d-block w-100 custom" alt="...">
+	  </div>
+	  <div class="carousel-item">
+		<img src="../assets/bad imagen slyder.avif" class="d-block w-100 custom" alt="...">
+	  </div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Next</span>
+	</button>
+  </div>
+
+  <!--Fin slyder-->
+
+
+<!--Encabezado-->
+<header>
+<h2 class="Titulo">GALERIA DE FOTOS</h2>
+</header>
+
+<!--Menu de navegacion-->
+
+<nav class="navbar">
+<!--nav mobile-->
+<input type="checkbox" id="check-menu"/>
+<label for="check-menu" class="menu"><i class="bx bx-menu"></i></label>
+<img src="../assets/logo nav.png" alt="logo nav" width="100">
+<ul>
+<li class="nav-item active"><a href="../index.html">Inicio</a></li>
+<li class="nav-item"><a href="../page/personajes.html">Personajes</a></li>
+<li class="nav-item"><a href="../galeria.html">Galeria</a></li>
+
+</ul>
+</nav>
+
+<!--Fin de encabezado-->
+
+<!--Cuerpo principal-->
+<main class="contenedor">
+<section class="img">
+<div class="content-info left">
+<h2>Galeria de fotos</h2>    
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet optio suscipit maiores, saepe ea, vel perspiciatis ab, inventore expedita culpa aspernatur placeat voluptas? Unde laborum minima sunt alias dolor omnis fugit sint, porro ad, provident tenetur quia? Facere maiores dolores perspiciatis labore ipsam quas ad tenetur velit unde perferendis.</p>
+<div><img src="../assets/galeria 1.jpg" alt="Imagen personajes"></div>
+<div><img src="../assets/galeria 2.jpg" alt="Imagen personajes"></div>
+<div><img src="../assets/galeria 3.jpg" alt="Imagen personajes"></div>
+<div><img src="../assets/galeria 4.png" alt="Imagen personajes"></div>
+<div><img src="../assets/galeria 5.jpg" alt="Imagen personajes"></div>
+</div>
+</section>
+</main>
+
+
+
+<!--Boton Volver-->
+<a href="../index.html">
+<button class="btn btn btn-outline-success" >Volver Inicio</button>
+</a>
+
+<!--Pie de pagina-->
+<footer>
+<ul class="footer img">	
+<i class='bx bxl-facebook-circle' ></i>
+<i class='bx bxl-spotify'></i>
+<i class='bx bxl-instagram' ></i>
+<i class='bx bxl-twitter' ></i>
+</ul>
+<p class="text">Derechos reservados © Breaking Bad 2023</p>
+</footer>
+
+
+<script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

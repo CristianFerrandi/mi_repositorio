@@ -1,0 +1,273 @@
+
+/*Reset*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+    
+}
+
+a{
+text-decoration: none;
+}
+
+/*Estilos de inicio*/
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #0a0202;
+    font-size: 25px;
+    }
+
+
+/*Estilos Generales*/
+header {
+    width: 100%;
+	height: 10px;
+	background-position: 0px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: #fcf3f3;
+	padding: 50px;
+	text-align: center;
+	
+}
+
+
+/*parte navegable*/
+
+.navbar{
+    background-color: #077507;
+    display: block;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0px;
+        
+    }
+    
+    .navbar ul .nav-item{
+    display: inline;
+    padding: 0 20px;
+    margin-left: 10px;
+    
+    }
+    
+.nav-item a {
+height: 100%;
+color: #f7f3f3;
+}
+
+.nav-item a:hover{
+background-color: #0973b1;
+}
+    
+.navbar img:hover{
+width: 50px;  
+height: 50px;
+opacity: .5;
+}
+
+    
+    nav ul {
+    display: flex;
+    justify-content: space-between; 
+    height: 40px;
+    font-size: 35px;
+    }
+
+/*check menu*/
+
+#check-menu, label.menu{
+    display: none;
+}
+
+/*Fin parte navegable*/
+
+
+/*Galeria*/
+.content-info{
+	width: 500px;
+	height: 400px;
+	overflow: scroll;
+	padding: 10px;
+    border-radius: 5px;
+
+}
+
+
+/*Cuerpo de pagina estilo Flex*/
+main {
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: center;
+margin-top: 20px;
+font-size: 20px;
+
+}
+
+section {
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-bottom: 20px;
+color: #110f0f;
+	
+}
+
+section div {
+padding: 20px;
+background-color: #f7f3f3;
+box-shadow: 0 4px 8px 0 rgba(248, 245, 245, 0.904);
+border-radius: 10px;
+}
+
+section img {
+max-width: 400px;
+height: auto;
+margin-right: 20px;
+
+}
+
+
+
+footer {
+background-color: #077507;
+color: #fff;
+padding: 10px;
+display: flex;
+text-align: center;
+
+}
+.text{
+margin-left: 550px;
+}
+
+
+/*Personajes Breaking Bad*/
+/*Relleno Personajes*/
+
+body.Padding{
+background-color: #9c8d8d;
+	
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+ 
+
+}
+  
+.card {
+flex-basis: calc(100% / 3 - 20px);
+margin: 10px;
+padding: 10px;
+text-align: center;
+box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+  
+/*Mover Imagen*/
+  .card:hover {
+transform: scale(1.05);
+opacity: .7;
+}
+  
+.card img {
+max-width: 100%;
+height: auto;
+border-radius: 50%;
+margin-bottom: 10px;
+box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+  
+.card h2 {
+font-size: 1.5em;
+margin: 0;
+}
+  
+.card p {
+font-size: 1.2em;
+margin: 10px 0 0;
+}
+ 
+
+.iframe{
+display: flex;
+justify-content: space-between;
+
+}
+
+
+ 
+/*Titulo de Temporadas*/ 
+h2.Titulo {
+color: #faefef;
+text-align: center;
+margin-right: 20px;
+}
+
+.galeria{
+color: #faefef;
+text-align: center;
+margin-right: 20px;
+}
+
+/*media queries*/
+@media (max-width:768px) {
+.navbar {
+background-color: #9c8d8d;
+}
+.navbar ul li{
+font-size: 0.9em;
+}
+}
+
+@media (max-width:480px){
+.navbar {
+background-color: #0973b1;
+}
+
+.grid{
+grid-template-rows: 140px 40 px 230px auto auto 60px;
+grid-template-areas:
+"cabecera cabecera cabecera"
+"navbar navbar navbar"
+"articulo articulo articulo"
+"seccion seccion seccion"
+"seccion seccion2 seccion2"
+"pie pie pie"
+}
+
+}
+
+@media screen and (max-width:600px){
+.navbar ul{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    top: 50px;
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+    background-color: #067a29;
+    justify-content: space-around;
+
+}  
+label.menu {
+display: block;
+font-size: 1.7em;
+color: #f7f3f3;
+cursor: pointer;
+}
+#check-menu:checked ~ul{
+    display: block;
+}
+
+}
+
+
+/* alt 126 selector para desplegar menu nav ~ */
