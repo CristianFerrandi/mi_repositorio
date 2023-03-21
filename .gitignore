@@ -45,5 +45,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
+*.bootstrap-5.2.3-dist
+*.wireframe
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
